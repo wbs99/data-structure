@@ -1,0 +1,6 @@
+const createTree = (value)=>{
+    return {
+        data: value,
+        children: null
+    };
+};

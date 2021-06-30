@@ -1,0 +1,25 @@
+const createTree = (value)=>{
+    return {
+        data: value,
+        children: null
+    };
+};
+const addChild = (node, value)=>{
+    const newNode = {
+        data: value,
+        children: null
+    };
+    node.children = node.children || []; //node.children 有可能是一个空数组
+    node.children.push(newNode);
+    return newNode;
+};
+const tree = createTree(10);
+const node2 = addChild(tree, 20);
+addChild(tree, 30);
+addChild(tree, 40);
+addChild(tree, 50);
+addChild(node2, 666);
+addChild(node2, 777);
+addChild(node2, 888);
+addChild(node2, 999);
+console.log(tree);

@@ -1,0 +1,10 @@
+const createTree = (value)=>{
+    return {
+        data: value,
+        children: null
+    };
+};
+const addChild = (node, value)=>{
+};
+const tree = createTree(10);
+console.log(tree);
